@@ -9,6 +9,7 @@ module.exports = {
 		x: "./x" // also imports chunk but with different exports
 	},
 	output: {
+		pathinfo: false,
 		filename: "[name].js"
 	},
 	module: {
