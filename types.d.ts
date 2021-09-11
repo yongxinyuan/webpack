@@ -7166,7 +7166,7 @@ declare interface NodeOptions {
 	/**
 	 * Include a polyfill for the 'global' variable.
 	 */
-	global?: boolean;
+	global?: null | boolean;
 }
 declare class NodeSourcePlugin {
 	constructor();

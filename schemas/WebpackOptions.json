@@ -1948,7 +1948,14 @@
         },
         "global": {
           "description": "Include a polyfill for the 'global' variable.",
-          "type": "boolean"
+          "anyOf": [
+            {
+              "enum": [null]
+            },
+            {
+              "type": "boolean"
+            }
+          ]
         }
       }
     },
