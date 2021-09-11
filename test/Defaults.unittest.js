@@ -233,7 +233,7 @@ Object {
   "node": Object {
     "__dirname": "mock",
     "__filename": "mock",
-    "global": true,
+    "global": false,
   },
   "optimization": Object {
     "checkWasmTypes": false,
@@ -1038,122 +1038,122 @@ Object {
 	);
 	test("target node", { target: "node" }, e =>
 		e.toMatchInlineSnapshot(`
-		- Expected
-		+ Received
+- Expected
++ Received
 
-		@@ ... @@
-		-     "node": false,
-		+     "node": true,
-		@@ ... @@
-		-     "web": true,
-		+     "web": false,
-		@@ ... @@
-		-     "target": "web",
-		+     "target": "node",
-		@@ ... @@
-		-     "__dirname": "mock",
-		-     "__filename": "mock",
-		-     "global": true,
-		+     "__dirname": "eval-only",
-		+     "__filename": "eval-only",
-		+     "global": false,
-		@@ ... @@
-		-     "chunkFormat": "array-push",
-		+     "chunkFormat": "commonjs",
-		@@ ... @@
-		-     "chunkLoading": "jsonp",
-		+     "chunkLoading": "require",
-		@@ ... @@
-		-       "jsonp",
-		-       "import-scripts",
-		+       "require",
-		@@ ... @@
-		-       "fetch",
-		+       "async-node",
-		@@ ... @@
-		-     "globalObject": "self",
-		+     "globalObject": "global",
-		@@ ... @@
-		-     "publicPath": "auto",
-		+     "publicPath": "",
-		@@ ... @@
-		-     "wasmLoading": "fetch",
-		+     "wasmLoading": "async-node",
-		@@ ... @@
-		-     "workerChunkLoading": "import-scripts",
-		-     "workerWasmLoading": "fetch",
-		+     "workerChunkLoading": "require",
-		+     "workerWasmLoading": "async-node",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-       "browser",
-		+       "node",
-		@@ ... @@
-		-   "target": "web",
-		+   "target": "node",
-	`)
+@@ ... @@
+-     "node": false,
++     "node": true,
+@@ ... @@
+-     "web": true,
++     "web": false,
+@@ ... @@
+-     "target": "web",
++     "target": "node",
+@@ ... @@
+-     "__dirname": "mock",
+-     "__filename": "mock",
+-     "global": false,
++     "__dirname": "eval-only",
++     "__filename": "eval-only",
++     "global": true,
+@@ ... @@
+-     "chunkFormat": "array-push",
++     "chunkFormat": "commonjs",
+@@ ... @@
+-     "chunkLoading": "jsonp",
++     "chunkLoading": "require",
+@@ ... @@
+-       "jsonp",
+-       "import-scripts",
++       "require",
+@@ ... @@
+-       "fetch",
++       "async-node",
+@@ ... @@
+-     "globalObject": "self",
++     "globalObject": "global",
+@@ ... @@
+-     "publicPath": "auto",
++     "publicPath": "",
+@@ ... @@
+-     "wasmLoading": "fetch",
++     "wasmLoading": "async-node",
+@@ ... @@
+-     "workerChunkLoading": "import-scripts",
+-     "workerWasmLoading": "fetch",
++     "workerChunkLoading": "require",
++     "workerWasmLoading": "async-node",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-       "browser",
++       "node",
+@@ ... @@
+-   "target": "web",
++   "target": "node",
+`)
 	);
 	test("target webworker", { target: "webworker" }, e =>
 		e.toMatchInlineSnapshot(`
@@ -1174,251 +1174,251 @@ Object {
 	);
 	test("target electron-main", { target: "electron-main" }, e =>
 		e.toMatchInlineSnapshot(`
-		- Expected
-		+ Received
+- Expected
++ Received
 
-		@@ ... @@
-		-     "electron": false,
-		-     "electronMain": false,
-		+     "electron": true,
-		+     "electronMain": true,
-		@@ ... @@
-		-     "node": false,
-		+     "node": true,
-		@@ ... @@
-		-     "web": true,
-		+     "web": false,
-		@@ ... @@
-		-     "target": "web",
-		+     "target": "electron-main",
-		@@ ... @@
-		-     "__dirname": "mock",
-		-     "__filename": "mock",
-		-     "global": true,
-		+     "__dirname": "eval-only",
-		+     "__filename": "eval-only",
-		+     "global": false,
-		@@ ... @@
-		-     "chunkFormat": "array-push",
-		+     "chunkFormat": "commonjs",
-		@@ ... @@
-		-     "chunkLoading": "jsonp",
-		+     "chunkLoading": "require",
-		@@ ... @@
-		-       "jsonp",
-		-       "import-scripts",
-		+       "require",
-		@@ ... @@
-		-       "fetch",
-		+       "async-node",
-		@@ ... @@
-		-     "globalObject": "self",
-		+     "globalObject": "global",
-		@@ ... @@
-		-     "publicPath": "auto",
-		+     "publicPath": "",
-		@@ ... @@
-		-     "wasmLoading": "fetch",
-		+     "wasmLoading": "async-node",
-		@@ ... @@
-		-     "workerChunkLoading": "import-scripts",
-		-     "workerWasmLoading": "fetch",
-		+     "workerChunkLoading": "require",
-		+     "workerWasmLoading": "async-node",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-       "browser",
-		+       "node",
-		+       "electron",
-		@@ ... @@
-		-   "target": "web",
-		+   "target": "electron-main",
-	`)
+@@ ... @@
+-     "electron": false,
+-     "electronMain": false,
++     "electron": true,
++     "electronMain": true,
+@@ ... @@
+-     "node": false,
++     "node": true,
+@@ ... @@
+-     "web": true,
++     "web": false,
+@@ ... @@
+-     "target": "web",
++     "target": "electron-main",
+@@ ... @@
+-     "__dirname": "mock",
+-     "__filename": "mock",
+-     "global": false,
++     "__dirname": "eval-only",
++     "__filename": "eval-only",
++     "global": true,
+@@ ... @@
+-     "chunkFormat": "array-push",
++     "chunkFormat": "commonjs",
+@@ ... @@
+-     "chunkLoading": "jsonp",
++     "chunkLoading": "require",
+@@ ... @@
+-       "jsonp",
+-       "import-scripts",
++       "require",
+@@ ... @@
+-       "fetch",
++       "async-node",
+@@ ... @@
+-     "globalObject": "self",
++     "globalObject": "global",
+@@ ... @@
+-     "publicPath": "auto",
++     "publicPath": "",
+@@ ... @@
+-     "wasmLoading": "fetch",
++     "wasmLoading": "async-node",
+@@ ... @@
+-     "workerChunkLoading": "import-scripts",
+-     "workerWasmLoading": "fetch",
++     "workerChunkLoading": "require",
++     "workerWasmLoading": "async-node",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-       "browser",
++       "node",
++       "electron",
+@@ ... @@
+-   "target": "web",
++   "target": "electron-main",
+`)
 	);
 	test("target electron-main", { target: "electron-preload" }, e =>
 		e.toMatchInlineSnapshot(`
-		- Expected
-		+ Received
+- Expected
++ Received
 
-		@@ ... @@
-		-     "electron": false,
-		+     "electron": true,
-		@@ ... @@
-		-     "electronPreload": false,
-		+     "electronPreload": true,
-		@@ ... @@
-		-     "node": false,
-		+     "node": true,
-		@@ ... @@
-		-     "target": "web",
-		+     "target": "electron-preload",
-		@@ ... @@
-		-     "__dirname": "mock",
-		-     "__filename": "mock",
-		-     "global": true,
-		+     "__dirname": "eval-only",
-		+     "__filename": "eval-only",
-		+     "global": false,
-		@@ ... @@
-		-     "chunkFormat": "array-push",
-		+     "chunkFormat": "commonjs",
-		@@ ... @@
-		-     "chunkLoading": "jsonp",
-		+     "chunkLoading": "require",
-		@@ ... @@
-		-       "jsonp",
-		-       "import-scripts",
-		+       "require",
-		@@ ... @@
-		-       "fetch",
-		+       "async-node",
-		@@ ... @@
-		-     "globalObject": "self",
-		+     "globalObject": "global",
-		@@ ... @@
-		-     "publicPath": "auto",
-		+     "publicPath": "",
-		@@ ... @@
-		-     "wasmLoading": "fetch",
-		+     "wasmLoading": "async-node",
-		@@ ... @@
-		-     "workerChunkLoading": "import-scripts",
-		-     "workerWasmLoading": "fetch",
-		+     "workerChunkLoading": "require",
-		+     "workerWasmLoading": "async-node",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		-         "aliasFields": Array [
-		-           "browser",
-		-         ],
-		+         "aliasFields": Array [],
-		@@ ... @@
-		-           "browser",
-		@@ ... @@
-		+       "node",
-		@@ ... @@
-		+       "electron",
-		@@ ... @@
-		-   "target": "web",
-		+   "target": "electron-preload",
-	`)
+@@ ... @@
+-     "electron": false,
++     "electron": true,
+@@ ... @@
+-     "electronPreload": false,
++     "electronPreload": true,
+@@ ... @@
+-     "node": false,
++     "node": true,
+@@ ... @@
+-     "target": "web",
++     "target": "electron-preload",
+@@ ... @@
+-     "__dirname": "mock",
+-     "__filename": "mock",
+-     "global": false,
++     "__dirname": "eval-only",
++     "__filename": "eval-only",
++     "global": true,
+@@ ... @@
+-     "chunkFormat": "array-push",
++     "chunkFormat": "commonjs",
+@@ ... @@
+-     "chunkLoading": "jsonp",
++     "chunkLoading": "require",
+@@ ... @@
+-       "jsonp",
+-       "import-scripts",
++       "require",
+@@ ... @@
+-       "fetch",
++       "async-node",
+@@ ... @@
+-     "globalObject": "self",
++     "globalObject": "global",
+@@ ... @@
+-     "publicPath": "auto",
++     "publicPath": "",
+@@ ... @@
+-     "wasmLoading": "fetch",
++     "wasmLoading": "async-node",
+@@ ... @@
+-     "workerChunkLoading": "import-scripts",
+-     "workerWasmLoading": "fetch",
++     "workerChunkLoading": "require",
++     "workerWasmLoading": "async-node",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
+-         "aliasFields": Array [
+-           "browser",
+-         ],
++         "aliasFields": Array [],
+@@ ... @@
+-           "browser",
+@@ ... @@
++       "node",
+@@ ... @@
++       "electron",
+@@ ... @@
+-   "target": "web",
++   "target": "electron-preload",
+`)
 	);
 	test("records", { recordsPath: "some-path" }, e =>
 		e.toMatchInlineSnapshot(`
@@ -1616,52 +1616,52 @@ Object {
 		},
 		e =>
 			e.toMatchInlineSnapshot(`
-			- Expected
-			+ Received
+- Expected
++ Received
 
-			@@ ... @@
-			-   "amd": undefined,
-			+   "amd": false,
-			@@ ... @@
-			-   "node": Object {
-			-     "__dirname": "mock",
-			-     "__filename": "mock",
-			-     "global": true,
-			-   },
-			+   "node": false,
-			@@ ... @@
-			-     "splitChunks": Object {
-			-       "automaticNameDelimiter": "-",
-			-       "cacheGroups": Object {
-			-         "default": Object {
-			-           "idHint": "",
-			-           "minChunks": 2,
-			-           "priority": -20,
-			-           "reuseExistingChunk": true,
-			-         },
-			-         "defaultVendors": Object {
-			-           "idHint": "vendors",
-			-           "priority": -10,
-			-           "reuseExistingChunk": true,
-			-           "test": /[\\\\/]node_modules[\\\\/]/i,
-			-         },
-			-       },
-			-       "chunks": "async",
-			-       "defaultSizeTypes": Array [
-			-         "javascript",
-			-         "unknown",
-			-       ],
-			-       "enforceSizeThreshold": 30000,
-			-       "hidePathInfo": false,
-			-       "maxAsyncRequests": Infinity,
-			-       "maxInitialRequests": Infinity,
-			-       "minChunks": 1,
-			-       "minRemainingSize": undefined,
-			-       "minSize": 10000,
-			-       "usedExports": false,
-			-     },
-			+     "splitChunks": false,
-		`)
+@@ ... @@
+-   "amd": undefined,
++   "amd": false,
+@@ ... @@
+-   "node": Object {
+-     "__dirname": "mock",
+-     "__filename": "mock",
+-     "global": false,
+-   },
++   "node": false,
+@@ ... @@
+-     "splitChunks": Object {
+-       "automaticNameDelimiter": "-",
+-       "cacheGroups": Object {
+-         "default": Object {
+-           "idHint": "",
+-           "minChunks": 2,
+-           "priority": -20,
+-           "reuseExistingChunk": true,
+-         },
+-         "defaultVendors": Object {
+-           "idHint": "vendors",
+-           "priority": -10,
+-           "reuseExistingChunk": true,
+-           "test": /[\\\\/]node_modules[\\\\/]/i,
+-         },
+-       },
+-       "chunks": "async",
+-       "defaultSizeTypes": Array [
+-         "javascript",
+-         "unknown",
+-       ],
+-       "enforceSizeThreshold": 30000,
+-       "hidePathInfo": false,
+-       "maxAsyncRequests": Infinity,
+-       "maxInitialRequests": Infinity,
+-       "minChunks": 1,
+-       "minRemainingSize": undefined,
+-       "minSize": 10000,
+-       "usedExports": false,
+-     },
++     "splitChunks": false,
+`)
 	);
 
 	test(
