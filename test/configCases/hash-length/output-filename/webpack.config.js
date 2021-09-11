@@ -177,6 +177,9 @@ module.exports = [
 		amd: {
 			expectedFilenameLength: 32,
 			expectedChunkFilenameLength: 34
+		},
+		node: {
+			global: true
 		}
 	},
 	{
@@ -191,6 +194,9 @@ module.exports = [
 		amd: {
 			expectedFilenameLength: 9 + 7 + 3,
 			expectedChunkFilenameLength: 2 + 9 + 7 + 3
+		},
+		node: {
+			global: true
 		}
 	},
 	{
@@ -205,6 +211,9 @@ module.exports = [
 		amd: {
 			expectedFilenameLength: 32,
 			expectedChunkFilenameLength: 34
+		},
+		node: {
+			global: true
 		}
 	},
 	{
@@ -219,6 +228,9 @@ module.exports = [
 		amd: {
 			expectedFilenameLength: 9 + 7 + 3,
 			expectedChunkFilenameLength: 2 + 9 + 7 + 3
+		},
+		node: {
+			global: true
 		}
 	}
 ];
