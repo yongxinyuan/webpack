@@ -233,7 +233,7 @@ Object {
   "node": Object {
     "__dirname": "mock",
     "__filename": "mock",
-    "global": true,
+    "global": null,
   },
   "optimization": Object {
     "checkWasmTypes": false,
@@ -1053,7 +1053,7 @@ Object {
 		@@ ... @@
 		-     "__dirname": "mock",
 		-     "__filename": "mock",
-		-     "global": true,
+		-     "global": null,
 		+     "__dirname": "eval-only",
 		+     "__filename": "eval-only",
 		+     "global": false,
@@ -1194,7 +1194,7 @@ Object {
 		@@ ... @@
 		-     "__dirname": "mock",
 		-     "__filename": "mock",
-		-     "global": true,
+		-     "global": null,
 		+     "__dirname": "eval-only",
 		+     "__filename": "eval-only",
 		+     "global": false,
@@ -1317,7 +1317,7 @@ Object {
 		@@ ... @@
 		-     "__dirname": "mock",
 		-     "__filename": "mock",
-		-     "global": true,
+		-     "global": null,
 		+     "__dirname": "eval-only",
 		+     "__filename": "eval-only",
 		+     "global": false,
@@ -1626,7 +1626,7 @@ Object {
 			-   "node": Object {
 			-     "__dirname": "mock",
 			-     "__filename": "mock",
-			-     "global": true,
+			-     "global": null,
 			-   },
 			+   "node": false,
 			@@ ... @@
@@ -1746,6 +1746,9 @@ Object {
 			@@ ... @@
 			-   "context": "<cwd>",
 			+   "context": "<cwd>/test/fixtures/browserslist",
+			@@ ... @@
+			-     "global": null,
+			+     "global": true,
 			@@ ... @@
 			-     "chunkLoadingGlobal": "webpackChunkwebpack",
 			+     "chunkLoadingGlobal": "webpackChunkbrowserslist_test",
