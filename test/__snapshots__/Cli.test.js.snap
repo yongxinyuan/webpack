@@ -1442,12 +1442,21 @@ Object {
         "description": "Include a polyfill for the 'global' variable.",
         "multiple": false,
         "path": "module.parser.javascript/auto.node.global",
+        "type": "enum",
+        "values": Array [
+          null,
+        ],
+      },
+      Object {
+        "description": "Include a polyfill for the 'global' variable.",
+        "multiple": false,
+        "path": "module.parser.javascript/auto.node.global",
         "type": "boolean",
       },
     ],
     "description": "Include a polyfill for the 'global' variable.",
     "multiple": false,
-    "simpleType": "boolean",
+    "simpleType": "string",
   },
   "module-parser-javascript-auto-require-context": Object {
     "configs": Array [
@@ -1929,12 +1938,21 @@ Object {
         "description": "Include a polyfill for the 'global' variable.",
         "multiple": false,
         "path": "module.parser.javascript/dynamic.node.global",
+        "type": "enum",
+        "values": Array [
+          null,
+        ],
+      },
+      Object {
+        "description": "Include a polyfill for the 'global' variable.",
+        "multiple": false,
+        "path": "module.parser.javascript/dynamic.node.global",
         "type": "boolean",
       },
     ],
     "description": "Include a polyfill for the 'global' variable.",
     "multiple": false,
-    "simpleType": "boolean",
+    "simpleType": "string",
   },
   "module-parser-javascript-dynamic-require-context": Object {
     "configs": Array [
@@ -2377,12 +2395,21 @@ Object {
         "description": "Include a polyfill for the 'global' variable.",
         "multiple": false,
         "path": "module.parser.javascript/esm.node.global",
+        "type": "enum",
+        "values": Array [
+          null,
+        ],
+      },
+      Object {
+        "description": "Include a polyfill for the 'global' variable.",
+        "multiple": false,
+        "path": "module.parser.javascript/esm.node.global",
         "type": "boolean",
       },
     ],
     "description": "Include a polyfill for the 'global' variable.",
     "multiple": false,
-    "simpleType": "boolean",
+    "simpleType": "string",
   },
   "module-parser-javascript-esm-require-context": Object {
     "configs": Array [
@@ -2770,12 +2797,21 @@ Object {
         "description": "Include a polyfill for the 'global' variable.",
         "multiple": false,
         "path": "module.parser.javascript.node.global",
+        "type": "enum",
+        "values": Array [
+          null,
+        ],
+      },
+      Object {
+        "description": "Include a polyfill for the 'global' variable.",
+        "multiple": false,
+        "path": "module.parser.javascript.node.global",
         "type": "boolean",
       },
     ],
     "description": "Include a polyfill for the 'global' variable.",
     "multiple": false,
-    "simpleType": "boolean",
+    "simpleType": "string",
   },
   "module-parser-javascript-require-context": Object {
     "configs": Array [
@@ -3856,12 +3892,21 @@ Object {
         "description": "Include a polyfill for the 'global' variable.",
         "multiple": false,
         "path": "node.global",
+        "type": "enum",
+        "values": Array [
+          null,
+        ],
+      },
+      Object {
+        "description": "Include a polyfill for the 'global' variable.",
+        "multiple": false,
+        "path": "node.global",
         "type": "boolean",
       },
     ],
     "description": "Include a polyfill for the 'global' variable.",
     "multiple": false,
-    "simpleType": "boolean",
+    "simpleType": "string",
   },
   "optimization-check-wasm-types": Object {
     "configs": Array [

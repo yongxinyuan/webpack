@@ -1,1 +1,6 @@
-module.exports = [[/Unexpected token/]];
+module.exports = [
+	[/Unexpected token/],
+	[/"global" has been used, it will evaluate to undefined/],
+	[/"global" has been used, it will evaluate to undefined/],
+	[/"global" has been used, it will evaluate to undefined/]
+];
