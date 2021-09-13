@@ -353,10 +353,7 @@ module.exports = (env, { testPath }) => [
 			new webpack.DefinePlugin({
 				NAME: JSON.stringify("global-runtimeChunk")
 			})
-		],
-		node: {
-			global: true
-		}
+		]
 	},
 	{
 		externals: {
@@ -371,10 +368,7 @@ module.exports = (env, { testPath }) => [
 			new webpack.DefinePlugin({
 				NAME: JSON.stringify("global-iife-runtimeChunk")
 			})
-		],
-		node: {
-			global: true
-		}
+		]
 	},
 
 	{
