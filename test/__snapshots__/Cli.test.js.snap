@@ -524,6 +524,19 @@ Object {
     "multiple": false,
     "simpleType": "boolean",
   },
+  "experiments-future-defaults": Object {
+    "configs": Array [
+      Object {
+        "description": "Apply defaults of next major version.",
+        "multiple": false,
+        "path": "experiments.futureDefaults",
+        "type": "boolean",
+      },
+    ],
+    "description": "Apply defaults of next major version.",
+    "multiple": false,
+    "simpleType": "boolean",
+  },
   "experiments-layers": Object {
     "configs": Array [
       Object {
@@ -1408,6 +1421,7 @@ Object {
         "values": Array [
           false,
           true,
+          "warn-mock",
           "mock",
           "eval-only",
         ],
@@ -1427,6 +1441,7 @@ Object {
         "values": Array [
           false,
           true,
+          "warn-mock",
           "mock",
           "eval-only",
         ],
@@ -1444,14 +1459,10 @@ Object {
         "path": "module.parser.javascript/auto.node.global",
         "type": "enum",
         "values": Array [
-          null,
+          false,
+          true,
+          "warn",
         ],
-      },
-      Object {
-        "description": "Include a polyfill for the 'global' variable.",
-        "multiple": false,
-        "path": "module.parser.javascript/auto.node.global",
-        "type": "boolean",
       },
     ],
     "description": "Include a polyfill for the 'global' variable.",
@@ -1904,6 +1915,7 @@ Object {
         "values": Array [
           false,
           true,
+          "warn-mock",
           "mock",
           "eval-only",
         ],
@@ -1923,6 +1935,7 @@ Object {
         "values": Array [
           false,
           true,
+          "warn-mock",
           "mock",
           "eval-only",
         ],
@@ -1940,14 +1953,10 @@ Object {
         "path": "module.parser.javascript/dynamic.node.global",
         "type": "enum",
         "values": Array [
-          null,
+          false,
+          true,
+          "warn",
         ],
-      },
-      Object {
-        "description": "Include a polyfill for the 'global' variable.",
-        "multiple": false,
-        "path": "module.parser.javascript/dynamic.node.global",
-        "type": "boolean",
       },
     ],
     "description": "Include a polyfill for the 'global' variable.",
@@ -2361,6 +2370,7 @@ Object {
         "values": Array [
           false,
           true,
+          "warn-mock",
           "mock",
           "eval-only",
         ],
@@ -2380,6 +2390,7 @@ Object {
         "values": Array [
           false,
           true,
+          "warn-mock",
           "mock",
           "eval-only",
         ],
@@ -2397,14 +2408,10 @@ Object {
         "path": "module.parser.javascript/esm.node.global",
         "type": "enum",
         "values": Array [
-          null,
+          false,
+          true,
+          "warn",
         ],
-      },
-      Object {
-        "description": "Include a polyfill for the 'global' variable.",
-        "multiple": false,
-        "path": "module.parser.javascript/esm.node.global",
-        "type": "boolean",
       },
     ],
     "description": "Include a polyfill for the 'global' variable.",
@@ -2763,6 +2770,7 @@ Object {
         "values": Array [
           false,
           true,
+          "warn-mock",
           "mock",
           "eval-only",
         ],
@@ -2782,6 +2790,7 @@ Object {
         "values": Array [
           false,
           true,
+          "warn-mock",
           "mock",
           "eval-only",
         ],
@@ -2799,14 +2808,10 @@ Object {
         "path": "module.parser.javascript.node.global",
         "type": "enum",
         "values": Array [
-          null,
+          false,
+          true,
+          "warn",
         ],
-      },
-      Object {
-        "description": "Include a polyfill for the 'global' variable.",
-        "multiple": false,
-        "path": "module.parser.javascript.node.global",
-        "type": "boolean",
       },
     ],
     "description": "Include a polyfill for the 'global' variable.",
@@ -3858,6 +3863,7 @@ Object {
         "values": Array [
           false,
           true,
+          "warn-mock",
           "mock",
           "eval-only",
         ],
@@ -3877,6 +3883,7 @@ Object {
         "values": Array [
           false,
           true,
+          "warn-mock",
           "mock",
           "eval-only",
         ],
@@ -3894,14 +3901,10 @@ Object {
         "path": "node.global",
         "type": "enum",
         "values": Array [
-          null,
+          false,
+          true,
+          "warn",
         ],
-      },
-      Object {
-        "description": "Include a polyfill for the 'global' variable.",
-        "multiple": false,
-        "path": "node.global",
-        "type": "boolean",
       },
     ],
     "description": "Include a polyfill for the 'global' variable.",
