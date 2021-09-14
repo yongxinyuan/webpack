@@ -1,0 +1,1 @@
+### "setup": "node ./setup/setup.js",

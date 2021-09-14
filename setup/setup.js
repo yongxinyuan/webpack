@@ -9,6 +9,7 @@ const webpackDependencyFolder = path.resolve(root, "node_modules/webpack");
 function setup() {
 	return Promise.all([
 		checkSymlinkExistsAsync().then(async hasSymlink => {
+			// 检查如果node_modules/webpack不是链接，如下处理
 			if (!hasSymlink) {
 				await ensureYarnInstalledAsync();
 				await runSetupSymlinkAsync();
@@ -33,8 +34,14 @@ async function runSetupSymlinkAsync() {
 	await exec("yarn", ["link", "webpack"], "Link webpack into itself");
 }
 
+/**
+ * 检查node_modules/webpack是否是链接
+ */
 function checkSymlinkExistsAsync() {
 	return new Promise((resolve, reject) => {
+		// 检查根目录node_modules是否存在
+		// 检查根目录node_modules/webpack是否存在
+		// 检测node_modules/webpack是否是链接
 		if (
 			fs.existsSync(node_modulesFolder) &&
 			fs.existsSync(webpackDependencyFolder) &&
